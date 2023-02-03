@@ -68,7 +68,7 @@ Photo.propTypes = {
   left: (props) => {
     if (props.direction === "column" && typeof props.left !== "number") {
       return new Error(
-        "left is a required number when direction is set to `column`"
+        "left is a req number when direction is set to `column`"
       );
     }
   },
