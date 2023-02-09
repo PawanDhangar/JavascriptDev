@@ -13,8 +13,17 @@ const everydayPack = new Backpack(
   26,
   26,
   false,
-  "December 5, 2018 15:00:00 PST"
+  "December 5, 2018 15:00:00 PST",
+  "Feb 28, 2023 15:00:00 PST"
 );
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
+console.log("Day Remain:", everydayPack.lastDate);
+
+console.log("Day Remain:", everydayPack.backpackAge());
+console.log("Day Remain:", everydayPack.backpackWarrenty());
+
+const birthday = new Date("Feb 9,2023 15:00 PST");
+
+console.log(birthday.getFullYear());
