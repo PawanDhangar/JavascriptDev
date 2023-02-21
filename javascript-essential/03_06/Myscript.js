@@ -11,7 +11,7 @@ const laptop = {
     linux: 10,
   },
   price: 450000,
-  browsername: chrome,
+  browsername: "chrome",
   browser: function (Browserusing) {
     this.browsername = Browserusing;
   },
@@ -21,7 +21,7 @@ console.log("the laptop is:", laptop);
 
 console.log("The Ram is:", laptop.ram);
 console.log("The os is:", laptop.os.window);
-console.log("The br is:", laptop.browser);
+console.log("The br is:", laptop.browsername);
 
 console.log("The Ram is:", laptop["ram"]);
 console.log("The os is:", laptop["os"]["linux"]);
